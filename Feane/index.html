@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assetes/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="image">
+        <div class="nav">
+            <p><b>Feane</b></p>
+            <ul class="nav-item">
+                <li><a href="#" style="color: goldenrod;">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BOOK TABLE</a></li>
+            </ul>
+            <ul class="icon">
+                <li><a href="#"><i class="fa-solid fa-user-large"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+            <a href="#" class="order">Order Online</a>
+        </div> <br><br>
+        <div class="slider">
+            <h1><b>Fast Food Restaurant</b></h1>
+            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad <br>
+                mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, <br>
+                sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+            </p><br><br>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="circle">
+                <img src="./Assetes/images/o1.jpg">
+            </div>
+            <div class="detail">
+                <h5>Tasty Thursday</h5>
+                <h6>
+                    <span>20%</span>
+                    Off
+                </h6><br>
+                <a href="#">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="circle">
+                <img src="./Assetes/images/o2.jpg">
+            </div>
+            <div class="detail">
+                <h5>Pizza Days</h5>
+                <h6>
+                    <span>15%</span>
+                    Off
+                </h6><br>
+                <a href="#">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="menu">
+            <h2>Our Menu</h2>
+        </div>
+        <div>
+            <ul class="submenu">
+                <li><button onclick="change(this)">All</button></li>
+                <li><button onclick="change(this)">Burger</button></li>
+                <li><button onclick="change(this)">Pizza</button></li>
+                <li><button onclick="change(this)">Pasta</button></li>
+                <li><button onclick="change(this)">Fries</button></li>
+            </ul>
+        </div>
+        <!-- cards -->
+        <div class="menucards">
+            <!-- card 1 -->
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail">
+                    </div>
+                </div>
+                <h5>Delicious Pizza</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$20</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 2 -->
+
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f2.png);">
+                    </div>
+                </div>
+                <h5>Delicious Burger</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$15</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 3 -->
+
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f3.png);">
+                    </div>
+                </div>
+                <h5>Delicious Pizza</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$17</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 4 -->
+
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f4.png);">
+                    </div>
+                </div>
+                <h5>Delicious Pasta</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$18</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 5 -->
+
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f5.png);">
+                    </div>
+                </div>
+                <h5>French Fries</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$10</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 6 -->
+
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f6.png);">
+                    </div>
+                </div>
+                <h5>Delicious Pizza</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$15</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 7 -->
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f7.png);">
+                    </div>
+                </div>
+                <h5>Tasty Burger</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$12</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 8 -->
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f8.png);">
+                    </div>
+                </div>
+                <h5>Tasty Burger</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$14</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+            <!-- card 9 -->
+            <div class="product-card">
+                <div class="product">
+                    <div class="product-detail" style="background-image: url(./Assetes/images/f9.png);">
+                    </div>
+                </div>
+                <h5>Delicious Pasta</h5>
+                <p>Veniam debitis quaerat officiis quasi <br>
+                    cupiditate quo, quisquam velit, magnam <br>
+                    voluptatem repellendus sed eaque</p>
+                <div class="product-footer">
+                    <h6>$10</h6>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="view">
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="about">
+        <div class="about-img">
+        </div>
+        <div class="about-detail">
+            <h2>We Are Feane</h2>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the<br>
+                majority have suffered alteration in some form, by injected humour, or<br>
+                randomised words which don't look even slightly believable. If you are<br>
+                going to use a passage of Lorem Ipsum, you need to be sure there isn't<br>
+                anything embarrassing hidden in the middle of text. All
+            </p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <!-- Book  -->
+    <div style="justify-content: center;display: flex;">
+
+        <div>
+            <div class="book-table">
+                <h2>Book A Table</h2>
+            </div>
+            <div class="book-detail">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Phone Number">
+                <input type="email" placeholder="Your Email">
+                <select style="width: 37rem;">
+                    <option disabled selected>How Many Persons?</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="date">
+                <div>
+                    <a href="#">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Says Customers -->
+    <div>
+
+        <div class="menu">
+            <h2>What Says Our Customers</h2>
+        </div>
+        <div class="cards">
+            <div class="review">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                    Mike Hamell
+                </h6>
+                <p>
+                    magna aliqua
+                </p>
+            </div>
+            <div class="review">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                    Moana Michell
+                </h6>
+                <p>
+                    magna aliqua
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div style="background-color: #212832;">
+        <div class="footer">
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <div class="contact-link">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Call +01 1234567890</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>demo@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Feane</h4>
+                <p>
+                    Necessary, making this the first true generator
+                    on the Internet. It uses a dictionary of over 200
+                    Latin words, combined with
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Opening Hours</h4>
+                <h6>Everyday</h6>
+                <h6>10.00 Am -10.00 Pm</h6>
+            </div>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#" style="padding: 0.3rem 0.5rem;"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-detail">
+            <p>
+                © <span>2023</span> All Rights Reserved By
+                <a href="https://html.design/">Free Html Templates</a><br><br>
+                © Distributed By
+                <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/b86d7c338a.js" crossorigin="anonymous"></script>
+<script src="./Assetes/js/script.js"></script> 
+</html>

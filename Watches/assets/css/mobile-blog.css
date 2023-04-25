@@ -335,18 +335,18 @@
     color: red;
   }
   .shop-watch-shop {
-  background-image: url(../images/about_hero.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 20rem;
+    background-image: url(../images/about_hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 20rem;
   }
   .shop-watch-shop-header {
-  text-align: center;
-  color: #0b1c39;
-  font-family: "Josefin Sans", sans-serif;
-  padding-top: 11rem;
-  font-size: 1.2rem;
-}
+    text-align: center;
+    color: #0b1c39;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 11rem;
+    font-size: 1.2rem;
+  }
   .blog {
     display: grid;
     grid-template-columns: auto;
@@ -376,7 +376,7 @@
     position: absolute;
     padding-top: 1.2rem;
     border-radius: 0.3rem;
-    margin-left:0.7rem;
+    margin-left: 0.7rem;
   }
   .blog-date > h3 {
     font-size: 1.5rem;
@@ -493,3 +493,250 @@
     list-style: none;
   }
 }
+/* mobile medium view  of navbar */
+@media (max-width: 375px) {
+  .nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+  .shop-watch-shop {
+    background-image: url(../images/about_hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 23rem;
+    width: 26.5rem;
+  }
+  .shop-watch-shop-header {
+    text-align: center;
+    color: #0b1c39;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 13rem;
+    font-size: 1.4rem;
+  }
+  .blog-image-detail > h3 {
+    font-size: 1.3rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .blog-image-detail > p {
+    color: #8c8c93;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 23rem;
+    line-height: 2rem;
+  }
+  .blog-search,
+  .blog-category,
+  .blog-recent-post,
+  .blog-tag-clouds,
+  .insta-feeds,
+  .news-letters {
+    margin-top: 2rem;
+    background-color: #fbf8ff;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 20.5rem;
+  }
+  .blog-search > input {
+    width: 16rem;
+    height: 3.5rem;
+    padding-left: 1.25rem;
+    border: 1px solid lightgrey;
+  }
+  .blog-search-btn,
+  .news-letter > button {
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    height: 3rem;
+    width: 20.5rem;
+    border: none;
+    margin-top: 1.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid red;
+  }
+  .blog-recent-post-detail {
+    float: right;
+    margin: 1rem 1rem 1rem 0rem;
+    width: 13rem;
+  }
+  .insta-gallery-image > img {
+    width: 6.4rem;
+  }
+  .news-letter > input {
+    width: 19rem;
+    height: 3.5rem;
+    padding-left: 1.25rem;
+    border: 1px solid lightgrey;
+  }
+}
+/* mobile small view  of navbar */
+@media (max-width: 320px) {
+  .nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+  .mobile-company-logo > img {
+    width: 12rem;
+  }
+  .shop-watch-shop {
+    background-image: url(../images/about_hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30rem;
+    width: 26.5rem;
+  }
+  .shop-watch-shop-header {
+    text-align: center;
+    color: #0b1c39;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 17rem;
+    font-size: 1.7rem;
+  }
+  .blog-image-detail > h3 {
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .blog-image-detail > p {
+    color: #8c8c93;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 23rem;
+    line-height: 2rem;
+  }
+  .blog-search,
+  .blog-category,
+  .blog-recent-post,
+  .blog-tag-clouds,
+  .insta-feeds,
+  .news-letters {
+    margin-top: 2rem;
+    background-color: #fbf8ff;
+    padding: 2.5rem;
+    width: 19.5rem;
+  }
+  .blog-search > input {
+    width: 15rem;
+    height: 3.5rem;
+    padding-left: 1.25rem;
+    border: 1px solid lightgrey;
+  }
+  .blog-search-btn,
+  .news-letter > button {
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    height: 3rem;
+    width: 19.5rem;
+    border: none;
+    margin-top: 1.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid red;
+  }
+  .blog-rightside-header > h4 {
+    font-size: 1.7rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: #0b1c39;
+  }
+  .blog-recent-post-image > img {
+    width: 6rem;
+  }
+  .blog-recent-post-detail {
+    float: right;
+    margin: 1rem -1rem 1.5rem 0rem;
+    width: 13rem;
+  }
+  .blog-recent-post-detail > h4 {
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+    font-weight: 400;
+    color: #0b1c39;
+  }
+  .blog-recent-post-detail > p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #8c8c93;
+    font-family: "Roboto", sans-serif;
+  }
+  .tag-clouds-btns > button {
+    font-size: 1.2rem;
+    color: #8c8c93;
+    border-radius: none;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    padding: 0.5rem 1.4rem;
+    margin-top: 0.7rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+  }
+  .news-letter > input {
+    width: 18 rem;
+    height: 3.5rem;
+    padding-left: 1.25rem;
+    border: 1px solid lightgrey;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+    margin: 4rem 1rem;
+    gap: 3rem;
+    width: 24.5rem;
+  }
+  .time-zone-detail > p {
+    margin-top: 0.5rem;
+    width: 24rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+  .links-detail > h4 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+  }
+  .links-detail > ul > li > a {
+    text-decoration: none;
+    color: #8c8c93;
+    transition: 0.5s;
+    font-size: 1.3rem;
+  }
+  .footer-copyright {
+    margin: 4rem 7rem 5rem 0rem;
+    color: #8c8c93;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer-copyright > p {
+    width: 24rem;
+    margin: 0rem 1rem;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+  }
+  .footer-copyright > ul {
+    float: left;
+    display: inline-flex;
+    margin: 1.5rem;
+    list-style: none;
+  }
+}
+

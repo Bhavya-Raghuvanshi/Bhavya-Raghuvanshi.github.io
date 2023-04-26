@@ -868,7 +868,7 @@
   .mobile-nav {
     display: block;
     position: fixed;
-    width: 90%;
+    width: 100%;
   }
   .mobile-company-logo > img {
     width: 8rem;

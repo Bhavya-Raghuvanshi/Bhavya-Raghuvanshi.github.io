@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BizPage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="laptop-nav navbar navbar-expand-lg fixed-top" id="navColor">
+      <div class="container-fluid mt-2">
+        <h1 class="nav-head mt-2">
+          <a class="navbar-brand fw-bold text-white" href="#">BizPage</a>
+        </h1>
+        <button class="navbar-toggler navbar-toggler-icon collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="
+        margin-right: 1rem;
+        /* background: aqua; */
+        color: white;
+        ">
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-5 ms-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: #18d26e;" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">TEAM</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                DROP DOWN
+              </a>
+              <ul class="dropdown-menu rounded-0" style="width:12rem;">
+                <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile-nav navbar navbar-dark fixed-top" id="mobileNavColor">
+        <div class="container-fluid">
+            <h1 class="nav-head mt-2">
+                <a class="navbar-brand fw-bold text-white" href="#">BizPage</a>
+            </h1>
+            <div id="nav-open-btn">
+
+          <button onclick="navOpen();" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            </div>
+            <div class="offcanvas offcanvas-start bg-black bg-opacity-75" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-body">
+              <button type="button" class="btn-close btn-close-white float-end" id="nav-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <ul class="navbar-nav mb-2">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#service">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#team">TEAM</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        DROP DOWN
+                      </a>
+                      <ul class="dropdown-menu rounded-0" style="width:12rem;">
+                        <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                        <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                        <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                        <li class="ms-3 my-3"><a class="dropdown-item" href="#">Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <section>
+    <div id="carouselExampleDark" class="carousel slide " data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></li>
+        <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></li>
+        <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></li>
+        <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></li>
+        <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></li>
+      </ol>
+      <div class="carousel-inner carousel-fade position-relative">
+        <div class="carousel-item active" style="background-image: url('./assets/images/intro-images/1.jpg');">
+          <div class="carousel-caption">
+            <h2>We are professional</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+            <a href="#" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/images/intro-images/2.jpg');">
+          <div class="carousel-caption">
+            <h2>At vero eos et accusamus</h2>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
+              et aut officiis debitis aut.</p>
+            <a href="#" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/images/intro-images/3.jpg');">
+          <div class="carousel-caption">
+            <h2>Temporibus autem quibusdam</h2>
+            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus
+              error sit voluptatem accusantium.</p>
+            <a href="#" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/images/intro-images/4.jpg');">
+          <div class="carousel-caption">
+            <h2>Nam libero tempore</h2>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+              non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+              minima veniam, quis nostrum.</p>
+            <a href="#" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/images/intro-images/5.jpg');">
+          <div class="carousel-caption">
+            <h2>Magnam aliquam quaerat</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+            <a href="#" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" style="width: 5%;" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" style="width: 5%;" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="bg-black">
+    <div class="container-fluid">
+      <div class="row mx-lg-4 mx-md-3  mx-sm-0 bg-black ">
+        <div class="col-lg-4  box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book"
+            viewBox="0 0 16 16" style="color:#18d96e;">
+            <path
+              d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+          </svg>
+          <a href="#" class="d-flex fs-5 nav-link navbar my-2 ">Lorem Ipsum Delino</a>
+          <p class="text-white">
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident
+          </p>
+        </div>
+        <div class="col-lg-4 box" style="background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="color:#18d96e;">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12" />
+          </svg>
+          <a href="#" class="d-flex fs-5 nav-link navbar my-2 ">Dolor Sitema</a>
+          <p class="text-white">
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino
+            ata
+          </p>
+        </div>
+        <div class="col-lg-4 box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16" style="color:#18d96e;">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
+          <a href="#" class="d-flex fs-5 nav-link navbar my-2 ">Sed ut perspiciatis</a>
+          <p class="text-white">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-bg" id="about">
+    <div class="container position-relative" style="z-index: 10;">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">ABOUT US</h3>
+        <p class="my-5 text-center" style="font-family:Open Sans, sans-serif;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+      <div class="row d-flex position-relative">
+        <div class="col-md-4">
+          <div class="card about-card mb-4 border border-white shadow">
+            <div class="card-image position-relative">
+              <img src="./assets/images/about-images/about-mission.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor"
+                  class="bi bi-speedometer2" viewBox="0 0 16 16">
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                  <path fill-rule="evenodd"
+                    d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+                </svg>
+              </div>
+            </div>
+            <div class="card-body mt-4">
+              <h2 class="card-title text-center fs-4 fw-bold" style="font-family:  Montserrat;">Our Mission</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card about-card mb-4 border border-white shadow">
+            <div class="card-image position-relative">
+              <img src="./assets/images/about-images/about-plan.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor" class="bi bi-list-ul"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="card-body mt-4">
+              <h2 class="card-title text-center fs-4 fw-bold" style="font-family: Montserrat;">Our Plan</h2>
+              <p class="card-text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card about-card border border-white shadow">
+            <div class="card-image position-relative">
+              <img src="./assets/images/about-images/about-vision.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+              </div>
+            </div>
+            <div class="card-body mt-4">
+              <h2 class="card-title text-center fs-4 fw-bold" style="font-family:  Montserrat;">Our Vision</h2>
+              <p class="card-text">
+                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui
+                ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white" id="service" style="padding: 5rem 0rem 4rem 0rem;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">SERVICES</h3>
+        <p class="my-5 text-center" style="font-size: 1.05rem;font-family:Open Sans, sans-serif;">
+          Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro
+          quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.
+        </p>
+      </div>
+      <div class="row row-gap-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+              class="bi bi-filter-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path
+                d="M7 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Lorem Ipsum</h4>
+              <p>Voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+              class="bi bi-journal-bookmark" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z" />
+              <path
+                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+              <path
+                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Dolor Sitema</h4>
+              <p>Minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+                limino ata
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 512 512">
+              <title>ionicons-v5-n</title>
+              <path
+                d="M368,415.86V72a24.07,24.07,0,0,0-24-24H72A24.07,24.07,0,0,0,48,72V424a40.12,40.12,0,0,0,40,40H416"
+                style="fill:none;stroke:#18d26e;stroke-linejoin:round;stroke-width:32px" />
+              <path d="M416,464h0a48,48,0,0,1-48-48V128h72a24,24,0,0,1,24,24V416A48,48,0,0,1,416,464Z"
+                style="fill:none;stroke:#18d26e;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="240" y1="128" x2="304" y2="128"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="240" y1="192" x2="304" y2="192"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="112" y1="256" x2="304" y2="256"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="112" y1="320" x2="304" y2="320"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="112" y1="384" x2="304" y2="384"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <path
+                d="M176,208H112a16,16,0,0,1-16-16V128a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v64A16,16,0,0,1,176,208Z" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Sed ut perspiciatis</h4>
+              <p>Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+              class="bi bi-speedometer2" viewBox="0 0 16 16">
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+              <path fill-rule="evenodd"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Magni Dolores</h4>
+              <p>Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 512 512">
+              <title>ionicons-v5-d</title>
+              <path d="M384,400.33l35.13-.33A29,29,0,0,0,448,371.13V140.87A29,29,0,0,0,419.13,112l-35.13.33"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <path d="M128,112l-36.8.33c-15.88,0-27.2,13-27.2,28.87V371.47c0,15.87,11.32,28.86,27.2,28.86L128,400"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="384" y1="192" x2="384" y2="320"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="320" y1="160" x2="320" y2="352"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="256" y1="176" x2="256" y2="336"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="192" y1="160" x2="192" y2="352"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              <line x1="128" y1="192" x2="128" y2="320"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Nemo Enim</h4>
+              <p>At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                atque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-icon">
+            <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 16.5C18 18.9862 15.9862 21 13.5 21C11.0138 21 9 18.9862 9 16.5C9 14.0138 11.0138 12 13.5 12C15.9862 12 18 14.0138 18 16.5Z"
+                fill="#18d26e" />
+              <path d="M4 28.3333C4 24.7867 10.3294 23 13.5 23C16.6706 23 23 24.7867 23 28.3333V36H4V28.3333Z"
+                fill="#18d26e" />
+              <path
+                d="M39 16.5C39 18.9862 36.9863 21 34.5 21C32.0138 21 30 18.9862 30 16.5C30 14.0138 32.0138 12 34.5 12C36.9863 12 39 14.0138 39 16.5Z"
+                fill="#18d26e" />
+              <path
+                d="M27 15C27 16.6575 25.6575 18 24 18C22.3425 18 21 16.6575 21 15C21 13.3425 22.3425 12 24 12C25.6575 12 27 13.3425 27 15Z"
+                fill="#18d26e" />
+              <path d="M25 28.3333C25 24.7867 31.3294 23 34.5 23C37.6706 23 44 24.7867 44 28.3333V36H25V28.3333Z"
+                fill="#18d26e" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.7508 22.185C28.4839 22.2831 28.2206 22.3873 27.9625 22.4975C26.7914 22.998 25.6088 23.6741 24.69 24.5785C24.444 24.8208 24.2105 25.0864 24 25.375C23.7895 25.0864 23.556 24.8208 23.3099 24.5785C22.3912 23.6741 21.2085 22.998 20.0374 22.4975C19.7794 22.3873 19.5161 22.2831 19.2491 22.185C20.7717 21.3961 22.7298 21 24 21C25.2701 21 27.2282 21.3961 28.7508 22.185Z"
+                fill="#18d26e" />
+            </svg>
+            <div class="service-detail">
+              <h4 class="fs-5 fw-bold" style="font-family: Montserrat;">Eiusmod Tempor</h4>
+              <p>Et harum quidem rerum facilis est
+                et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                eligendi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="call-to-action">
+    <div class="container text-center text-white">
+      <h3 class="fs-2 fw-bold" style="font-family: Montserrat;">Call To Action</h3>
+      <p style="font-family: Open Sans, sans-serif;" class="fs-6 my-lg-4 mt-4 mb-5">Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="#" class="call-to-action-link">CALL TO ACTION</a>
+    </div>
+  </section>
+  <section class="bg-white" style="padding: 5rem 0rem 4rem 0rem;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">OUR SKILLS</h3>
+        <p class="my-5 text-center" style="font-size: 1.05rem;font-family:Open Sans, sans-serif;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        </p>
+      </div>
+      <div class="progress my-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+        style="height: 2.2rem;">
+        <div class="progress-bar bg-success" id="htmlBar" style="width: 100%;">
+          <span class="text-start ms-3" style="font-family: Open Sans, sans-serif;">HTML
+            <i class="float-end me-3" style="font-style: normal;">100%</i>
+          </span>
+        </div>
+      </div>
+      <div class="progress my-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+        style="height: 2.2rem;">
+        <div class="progress-bar bg-primary" id="cssBar" style="width: 90%;">
+          <span class="text-start ms-3" style="font-family: Open Sans, sans-serif;">CSS
+            <i class="float-end me-3" style="font-style: normal;">90%</i>
+          </span>
+        </div>
+      </div>
+      <div class="progress my-2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+        style="height: 2.2rem;;">
+        <div class="progress-bar bg-warning" id="javaBar" style="width: 75%;">
+          <span class="text-start ms-3" style="font-family: Open Sans, sans-serif;">JAVASCRIPT
+            <i class="float-end me-3" style="font-style: normal;">75%</i>
+          </span>
+        </div>
+      </div>
+      <div class="progress my-2" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+        style="height: 2.2rem;">
+        <div class="progress-bar bg-danger" id="photoBar" style="width: 55%;">
+          <span class="text-start ms-3" style="font-family: Open Sans, sans-serif;">PHOTOSHOP
+            <i class="float-end me-3" style="font-style: normal;">55%</i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="facts-bg">
+    <div class="container position-relative" style="z-index: 10;">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">FACTS</h3>
+        <p class="my-5 text-center" style="font-family:Open Sans, sans-serif;">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-6 text-center text-black mb-5" style="font-family: Montserrat;">
+          <span class="fw-bold" style="color: #18d26e;font-size: 3rem;" id="clients"></span>
+          <p>Clients</p>
+        </div>
+        <div class="col-lg-3 col-6 text-center text-black mb-5" style="font-family: Montserrat;">
+          <span class="fw-bold" style="color: #18d26e;font-size: 3rem;" id="projects"></span>
+          <p>Projects</p>
+        </div>
+        <div class="col-lg-3 col-6 text-center text-black mb-5" style="font-family: Montserrat;">
+          <span class="fw-bold" style="color: #18d26e;font-size: 3rem;" id="hours"></span>
+          <p>Hours Of Support</p>
+        </div>
+        <div class="col-lg-3 col-6 text-center text-black mb-5" style="font-family: Montserrat;">
+          <span class="fw-bold" style="color: #18d26e;font-size: 3rem;" id="workers"></span>
+          <p>Hard Workers</p>
+        </div>
+      </div>
+      <div class="facts-img pt-3">
+        <img src="./assets/images/facts-images/facts-img.png" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" style="padding: 5rem 0rem 4rem 0rem;background-color:#f7f7f7;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">OUR PORTFOLIO</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-12  ">
+          <ul class="my-4" id="list-tab">
+            <li class="rounded-1 px-3 py-2">ALL</li>
+            <li class="rounded-1 px-3 py-2">APP</li>
+            <li class="rounded-1 px-3 py-2">CARD</li>
+            <li class="rounded-1 px-3 py-2">WEB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-gap-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/app1.jpg" class="img-fluid" alt="app-1">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">App 1</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">APP
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top" >
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/web3.jpg" class="img-fluid" alt="web-3">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Web 3</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">WEB
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/app2.jpg" class="img-fluid" alt="app-2">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">App 2</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">APP
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/card2.jpg" class="img-fluid" alt="card-2">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Card 2</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">
+                CARD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/web2.jpg" class="img-fluid" alt="web-2">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                  </path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Web 2</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">WEB
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/app3.jpg" class="img-fluid" alt="app-3">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                  </path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">App 3</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">APP
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/card1.jpg" class="img-fluid" alt="card-1">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                  </path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Card 1</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">
+                CARD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/card3.jpg" class="img-fluid" alt="card-3">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                  </path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Card 3</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">
+                CARD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="our-card card border border-white shadow rounded-top">
+            <div class="portfolio-card-image">
+              <img src="./assets/images/portfolio-images/web1.jpg" class="img-fluid" alt="web-1">
+              <a href="#" class="link-preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                  </path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="link-details" title="More Details">
+                <svg width="30" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6V16"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.5 20.5L12 12M12 12V16M12 12H8" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-body text-center mt-1">
+              <h2 class="card-title fs-5 fw-bold" style="font-family:  Montserrat;">Web 1</h2>
+              <p class="card-text" style="color:#B8B8B8;font-family:Open Sans,sans-serif;font-size: 0.9rem;">WEB
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white" style="padding: 5rem 0rem 4rem 0rem;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">OUR CLIENTS</h3>
+      </div>
+    </div>
+  </section>
+  <section style="padding: 5rem 0rem 4rem 0rem;background-color:#f7f7f7;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">TESTIMONIALS</h3>
+      </div>
+      <div class=" p-lg-5 py-4 mx-auto mt-3 mb-3">
+        <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators" style="bottom: -3rem;">
+            <li type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="First slide"></li>
+            <li type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="2" aria-label="Third slide"></li>
+            <li type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+            <li type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="4" aria-label="Fifth slide"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item text-center active" data-bs-interval="2000">
+              <div class="carousel-testimonial-img border border-4 border-white rounded-circle m-auto">
+                <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial/testimonial-1.jpg"
+                  alt="First slide">
+              </div>
+              <h3 class="mt-2 mb-1 fs-5 "><strong class="text-dark">Saul Goodman</strong></h3>
+              <h4 class="text-body-tertiary mb-3">Ceo & Founder</h4>
+              <p class="fst-italic text-body-emphasis">
+                <img src="./assets/images/testimonial/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="./assets/images/testimonial/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="2000">
+              <div class="carousel-testimonial-img border border-4 border-white rounded-circle m-auto">
+                <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial/testimonial-2.jpg"
+                  alt="Second slide">
+              </div>
+              <h3 class="mt-2 mb-1 fs-5 "><strong class="text-dark">Sara Wilsson</strong></h3>
+              <h4 class="text-body-tertiary mb-3">Designer</h4>
+              <p class="fst-italic text-body-emphasis">
+                <img src="./assets/images/testimonial/quote-sign-left.png" class="quote-sign-left" alt="">
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <img src="./assets/images/testimonial/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="2000">
+              <div class="carousel-testimonial-img border border-4 border-white rounded-circle m-auto">
+                <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial/testimonial-3.jpg"
+                  alt="Third slide">
+              </div>
+              <h3 class="mt-2 mb-1 fs-5 "><strong class="text-dark">Jena Karlis</strong></h3>
+              <h4 class="text-body-tertiary mb-3">Store Owner</h4>
+              <p class="fst-italic text-body-emphasis">
+                <img src="./assets/images/testimonial/quote-sign-left.png" class="quote-sign-left" alt="">
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+                labore quem eram duis noster aute amet eram fore quis sint minim.
+                <img src="./assets/images/testimonial/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="2000">
+              <div class="carousel-testimonial-img border border-4 border-white rounded-circle m-auto">
+                <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial/testimonial-4.jpg"
+                  alt="Fourth slide">
+              </div>
+              <h3 class="mt-2 mb-1 fs-5 "><strong class="text-dark">Matt Brandon</strong></h3>
+              <h4 class="text-body-tertiary mb-3">Freelancer</h4>
+              <p class="fst-italic text-body-emphasis">
+                <img src="./assets/images/testimonial/quote-sign-left.png" class="quote-sign-left" alt="">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+                dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <img src="./assets/images/testimonial/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="2000">
+              <div class="carousel-testimonial-img border border-4 border-white rounded-circle m-auto">
+                <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial/testimonial-5.jpg"
+                  alt="Fifth slide">
+              </div>
+              <h3 class="mt-2 mb-1 fs-5 "><strong class="text-dark">John Larson</strong></h3>
+              <h4 class="text-body-tertiary mb-3">Enterpreneur</h4>
+              <p class="fst-italic text-body-emphasis">
+                <img src="./assets/images/testimonial/quote-sign-left.png" class="quote-sign-left" alt="">
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <img src="./assets/images/testimonial/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white" id="team" style="padding: 5rem 0rem 4rem 0rem;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">TEAM</h3>
+        <p class="my-5 text-center" style="font-family:Open Sans, sans-serif;">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        </p>
+      </div>
+      <div class="row gap-lg-0 row-gap-md-4 row-gap-3 d-inline-flex">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-client">
+            <img src="./assets/images/team/team-1.jpg" class="img-fluid" alt="team-image">
+            <div class="team-detail">
+              <div class="team-content text-center text-white">
+                <h4 class=" fw-semibold fs-5 mb-1" style="font-family: Montserrat;">Walter White</h4>
+                <span class="fst-italic" style="font-family: Open Sans,sans-serif;font-size:0.9rem;">Chief Executive
+                  Officer</span>
+                <div class="team-social mt-3">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 512">
+                      <path
+                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-client">
+            <img src="./assets/images/team/team-2.jpg" class="img-fluid" alt="team-image">
+            <div class="team-detail">
+              <div class="team-content text-center text-white">
+                <h4 class=" fw-semibold fs-5 mb-1" style="font-family: Montserrat;">Sarah Jhonson</h4>
+                <span class="fst-italic" style="font-family: Open Sans,sans-serif;font-size:0.9rem;">Product
+                  Manager</span>
+                <div class="team-social mt-3">
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512">
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                      viewBox="0 0 640 512">
+                      <path
+                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-client">
+            <img src="./assets/images/team/team-3.jpg" class="img-fluid" alt="team-image">
+            <div class="team-detail">
+              <div class="team-content text-center text-white">
+                <h4 class=" fw-semibold fs-5 mb-1" style="font-family: Montserrat;">William Anderson</h4>
+                <span class="fst-italic" style="font-family: Open Sans,sans-serif;font-size:0.9rem;">CTO</span>
+                <div class="team-social mt-3">
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512">
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                      viewBox="0 0 640 512">
+                      <path
+                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-client">
+            <img src="./assets/images/team/team-4.jpg" class="img-fluid" alt="team-image">
+            <div class="team-detail">
+              <div class="team-content text-center text-white">
+                <h4 class=" fw-semibold fs-5 mb-1" style="font-family: Montserrat;">Amanda Jepson</h4>
+                <span class="fst-italic" style="font-family: Open Sans,sans-serif;font-size:0.9rem;">Accountant</span>
+                <div class="team-social mt-3">
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512">
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                      viewBox="0 0 640 512">
+                      <path
+                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg style="color: white" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" style="padding: 4rem 0rem 4rem 0rem;background-color:#f7f7f7;">
+    <div class="container">
+      <div class="about-detail">
+        <h3 class="text-black text-center fw-bolder">CONTACT US</h3>
+        <p class="my-5 text-center" style="font-family:Open Sans, sans-serif;">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        </p>
+      </div>
+      <div class="row contact-us">
+        <div class="col-md-4 py-lg-5">
+          <div class="contact-info text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" viewBox="0 0 512 512">
+              <title>ionicons-v5-n</title>
+              <path
+                d="M256,48c-79.5,0-144,61.39-144,137,0,87,96,224.87,131.25,272.49a15.77,15.77,0,0,0,25.5,0C304,409.89,400,272.07,400,185,400,109.39,335.5,48,256,48Z"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:20px" />
+              <circle cx="256" cy="192" r="48"
+                style="fill:none;stroke:#18d26e;stroke-linecap:round;stroke-linejoin:round;stroke-width:20px" />
+            </svg>
+            <h3 class="fw-bold text-secondary mt-3" style="font-family: Montserrat;font-size:1.2rem;">ADDRESS</h3>
+            <address class="mt-3" style="font-family: Open Sans,sans-serif;">A108 Adam Street, NY 535022, USA</address>
+          </div>
+        </div>
+        <div class="col-md-4 py-lg-5 border-end border-start border-sm-0">
+          <div class="contact-info text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" fill="currentColor" class="bi bi-telephone"
+              viewBox="0 0 16 16" style="color:#18d26e;">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+            <h3 class="fw-bold text-secondary my-3" style="font-family: Montserrat;font-size:1.2rem;">PHONE NUMBER</h3>
+            <a href="#" class="contact-info-link">+1 5589 55488 55</a>
+          </div>
+        </div>
+        <div class="col-md-4 py-lg-5">
+          <div class="contact-info text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="80">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    opacity: 0;
+                  }
+
+                  .cls-2 {
+                    fill: #18d26e;
+                    stroke-width: 0.01px;
+                  }
+                </style>
+              </defs>
+              <title>email</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="email">
+                  <g id="email-2" data-name="email">
+                    <rect class="cls-1" width="24" height="24" />
+                    <path class="cls-2"
+                      d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,.6.2,1,1,0,0,0,.6-.2L20,7.25V17A1,1,0,0,1,19,18Z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h3 class="fw-bold text-secondary my-3" style="font-family: Montserrat;font-size:1.2rem;">EMAIL</h3>
+            <a href="#" class="contact-info-link">info@example.com</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form my-5">
+        <div class="contact-row">
+          <div class="mb-3 col-md-6 form-filed">
+            <input type="text" class="form-control form-size" id="exampleFormControlInput1" placeholder="Your Name">
+          </div>
+          <div class="mb-3 col-md-6 form-filed">
+            <input type="email" class="form-control form-size" id="exampleFormControlInput2" placeholder="Your Email">
+          </div>
+        </div>
+          <div class="mb-3">
+            <input type="text" class="form-control form-size" id="exampleFormControlInput1"
+              placeholder="Your Subject">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-size" id="exampleFormControlTextarea1"
+              placeholder="Message" rows="5"></textarea>
+          </div>
+          <div class="mb-3 text-center">
+            <button type="button" class="btn text-white px-4 py-2 rounded-0" style="background-color: #18d26e;">Send
+              Message</button>
+          </div>
+      </form>
+    </div>
+  </section>
+
+  <section style="padding: 4rem 0rem 2rem 0rem;background-color:#111111;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-2 footer-detail">
+          <h1 class="footer-head">
+            <a class="navbar-brand text-white fw-bold" href="#">BizPage</a>
+          </h1>
+          <p class="text-white mt-4" style="font-family: Montserrat;line-height:1.5rem;font-size:0.9rem;">Cras fermentum
+            odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet
+            volutpat consequat mauris nunc congue.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-2 footer-links position-relative">
+          <h4>USEFUL LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="text-white mb-2 pb-2 border-bottom border-secondary" style="font-family:Open Sans, sans-serif;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <a href="#" class="text-decoration-none">Home</a>
+            </li>
+            <li class="text-white mb-2 pb-2 border-bottom  border-secondary" style="font-family:Open Sans, sans-serif;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <a href="#" class="text-decoration-none">About us</a>
+            </li>
+            <li class="text-white mb-2 pb-2 border-bottom border-secondary" style="font-family:Open Sans, sans-serif;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <a href="#" class="text-decoration-none">Services</a>
+            </li>
+            <li class="text-white mb-2 pb-2 border-bottom border-secondary" style="font-family:Open Sans, sans-serif;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <a href="#" class="text-decoration-none">Terms of service</a>
+            </li>
+            <li class="text-white mb-2 pb-2 border-bottom border-secondary" style="font-family:Open Sans, sans-serif;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <a href="#" class="text-decoration-none">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 footer-contact position-relative">
+          <h4>CONTACT US</h4>
+          <p class="text-white mb-4" style="font-family: Open Sans,sans-serif;line-height:1.8rem;font-size:0.95rem;">
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+          <div class="social-links">
+            <a href="#" class="text-decoration-none rounded-circle me-2  ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  fill="white">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="text-decoration-none rounded-circle me-2  ">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  fill="white">
+                </path>
+              </svg>
+            </a>
+            <a herf="#" class="text-decoration-none rounded-circle me-2  ">
+              <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  fill="white"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-decoration-none rounded-circle me-2 "
+              style="padding-left:0.4rem; padding-right:0.1rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 640 512">
+                <path
+                  d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                  fill="white">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="text-decoration-none rounded-circle me-2  " style="padding-right:0.5rem;">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  fill="white">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-news position-relative">
+          <h4>OUR NEWSLETTER</h4>
+          <p class="text-white mt-4" style="font-family: Montserrat;line-height:1.5rem;font-size:0.9rem;">
+            Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam
+            minim quorum culpa amet magna export quem marada parida nodela caramase seza.
+          </p>
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control w-25 rounded-0" aria-describedby="button-addon2">
+            <button class="btn text-white  rounded-0" type="button" id="button-addon2"
+              style="width:6rem;background-color:#18d26e;">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-black" id="copyright">
+    <div class="container">
+      <div class="text-center  text-white">
+        © Copyright <strong>BizPage</strong>. All Rights Reserved
+      </div>
+      <div class="text-center text-white">
+        Best <a href="https://bootstrapmade.com/" class="text-decoration-none text-success">Bootstrap Templates</a> by BootstrapMade
+      </div>
+    </div>
+  </section>
+  <a href="#" class="back-to-top">
+    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="16" width="16">
+      <path
+        d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"
+        fill="white">
+      </path>
+    </svg>
+  </a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

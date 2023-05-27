@@ -37,7 +37,7 @@ for (let index = 0; index < array.length; index++) {
   for (let i = 0; i < array.length; i++) {
     _$id(
       `row-${index}`
-    ).innerHTML += `<td id="${id}" onclick="moveSign(this)" class="bg-gray-800 lg:h-28 lg:w-28 w-24 h-24 text-center text-white font-bold lg:text-6xl text-6xl border-2 border-black"></td>`;
+    ).innerHTML += `<td id="${id}" onclick="moveSign(this)" class="bg-gray-800 lg:h-24 lg:w-24 w-24 h-24 text-center text-white font-bold lg:text-6xl text-6xl border-2 border-black"></td>`;
     id++;
   }
   _$id("tic-boxes").innerHTML += `</tr>`;

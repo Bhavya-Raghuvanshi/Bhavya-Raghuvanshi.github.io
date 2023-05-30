@@ -44,12 +44,17 @@ for (let index = 0; index < array.length; index++) {
 }
 
 function selectSign(s) {
-  if (Player1 == null) {
+  if (s.value == "◯") {
     Player1 = s.value;
+    Player2 = "✕";
     _$id("player1-sign").innerText += ` = ${Player1}`;
-  } else if (Player1 != s.value) {
-    Player2 = s.value;
     _$id("player2-sign").innerText += ` = ${Player2}`;
+  } else if (s.value == "✕") {
+    Player1 = s.value;
+    Player2 = "◯";
+    _$id("player1-sign").innerText += ` = ${Player1}`;
+    _$id("player2-sign").innerText += ` = ${Player2}`;
+
   }
 }
 

@@ -49,12 +49,15 @@ function selectSign(s) {
     Player2 = "✕";
     _$id("player1-sign").innerText += ` = ${Player1}`;
     _$id("player2-sign").innerText += ` = ${Player2}`;
+    _$id("one-sign-value").style.visibility = "hidden";
+    _$id("two-sign-value").style.visibility = "hidden";
   } else if (s.value == "✕") {
     Player1 = s.value;
     Player2 = "◯";
     _$id("player1-sign").innerText += ` = ${Player1}`;
     _$id("player2-sign").innerText += ` = ${Player2}`;
-
+    _$id("one-sign-value").style.visibility = "hidden";
+    _$id("two-sign-value").style.visibility = "hidden";
   }
 }
 

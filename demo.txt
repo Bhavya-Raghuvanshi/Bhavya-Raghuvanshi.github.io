@@ -1,0 +1,91 @@
+handleRCExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleCCOEExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleHTESTExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handlePESOExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handlePUCExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleRPCExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleFCExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleABSExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleSGCExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleFECExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleVIExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleCalibraExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleRoadTaxExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleSurakshaExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+handleAIPExipre(e)
+{
+    const updateData = {...vehicleData}
+    updateData = vehicleData.
+}
+
+setRcExpire
+setCcoeExpire
+setFcExpire
+setAbsExpire
+setSgcExpire
+setViExpire
+setHtestExpire
+setPesoExpire
+setFecExpire
+setPucExpire
+setCalibraExpire
+setRoadTaxExpire
+setRpcExpire
+setSurakshaExpire
+setAipExpire
